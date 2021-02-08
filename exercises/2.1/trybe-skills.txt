@@ -7,3 +7,5 @@ O que vou aprender na Trybe:
 - Javascript
 - React
 - Mongodb
+- Node
+
