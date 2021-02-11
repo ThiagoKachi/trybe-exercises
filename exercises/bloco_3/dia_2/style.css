@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cyan;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 65px;
+    color: rgb(255, 165, 0);
+    font-family: sans-serif;
+    text-align: center;
+}
+
+li {
+    background-color: blueviolet;
+    text-align: center;
+}
+
+li:nth-child(1) {
+    background-color: yellow;
+}
+
+li:nth-child(2) {
+    background-color: red;
+}
+
+li:nth-child(3) {
+    background-color: brown;
+}
+
+.mod {
+    background-color: blue;
+}
+
+p {
+    font-weight: 600;
+    font-size: 3em;
+    line-height: 58px;
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+}
