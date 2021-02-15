@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    margin-top: 48px;
+    text-align: center;
+}
+
+header h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: rgb(45, 44, 44);
+    font-weight: 700;
+}
+
+header h2 span {
+    text-decoration: underline;
+    color: rgb(198, 65, 65);
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: rgb(45, 44, 44);
+}
+
+nav a:hover {
+    color: cornflowerblue;
+    transition: color 400ms;
+}
+
+article {
+    text-align: center;
+}
+
+article p {
+    width: 80%;
+    margin: auto;
+}
+
+article h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.general-infos h3 {
+    margin-bottom: 10px;
+    color: cornflowerblue;
+}
+
+.general-infos li {
+    margin-bottom: 5px;
+}
+
+.facts > h3:nth-child(1) {
+    margin-top: 30px;
+    color: cornflowerblue;
+}
+
+.facts section h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.facts section p {
+    margin-bottom: 20px;
+}
+
+.facts section img {
+width: 500px; 
+}
+
+.references li a {
+    margin-bottom: 2px;
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+aside {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+aside a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(216, 33, 33);
+}
+
+footer {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
