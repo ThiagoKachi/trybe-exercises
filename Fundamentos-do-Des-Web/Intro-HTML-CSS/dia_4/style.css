@@ -89,9 +89,18 @@ width: 500px;
     color: cornflowerblue;
 }
 
+.references li a:hover {
+    color: rgb(48, 46, 46);
+    transition: color 600ms;
+}
+
 aside {
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+aside p {
+    font-weight: 600;
 }
 
 aside a {
