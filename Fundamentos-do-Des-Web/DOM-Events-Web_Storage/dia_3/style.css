@@ -31,7 +31,7 @@
     color: #777;
     display: inline-block;
     font-size:20px;
-    margin: 5px 0;
+    margin: 10px 0;
     text-align: center;
     vertical-align: middle;
     width: 13.6%;
@@ -45,6 +45,7 @@
   
   input {
     margin-top: 8px;
+    width: 180px;
   }
   
   label {
@@ -82,15 +83,15 @@
     border-radius: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: inline-block;
-    height: 35px;
     margin-left: 10px;
     vertical-align: middle;
-    width: 35px;
+    height: 15px;
+    width: 15px;
   }
   
   .my-tasks div:hover {
-    height: 45px;
-    width: 45px;
+    height: 20px;
+    width: 20px;
   }
   
   .my-tasks span {
