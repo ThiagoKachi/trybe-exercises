@@ -14,6 +14,7 @@ function createDaysOfTheWeek() {
 createDaysOfTheWeek();
   
 // Escreva seu código abaixo.
+
 // 1
 function calenderDays() {
   const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
@@ -42,16 +43,16 @@ function calenderDays() {
 calenderDays()
 
 // 2
-function holidays(feriado) {
+function holidays(holiday) {
   let button = document.createElement('button')
   let buttonsContainer = document.querySelector('.buttons-container')
-  button.innerHTML = 'Feriados'
+  button.innerHTML = holiday
   button.id = 'btn-holiday'
 
   buttonsContainer.appendChild(button)
 }
 
-holidays()
+holidays('Feriados')
 
 // 3
 function holidaysClick() {
@@ -75,14 +76,14 @@ holidaysClick()
 
 // 4
 function fridayDay(sexta) {
-  let sextaFeira = document.createElement('button')
+  let friday = document.createElement('button')
   let buttonContainer = document.querySelector('.buttons-container')
-  sextaFeira.id = 'btn-friday'
-  sextaFeira.innerText = 'SEXTOU!!'
-  buttonContainer.appendChild(sextaFeira)
+  friday.id = 'btn-friday'
+  friday.innerText = sexta
+  buttonContainer.appendChild(friday)
 }
 
-fridayDay()
+fridayDay('SEXTOU!!')
 
 // 5
 function sextouu() {
@@ -108,7 +109,7 @@ function zoomIn() {
 
   for(let i = 0; i < days.length; i++) {
     days[i].addEventListener('mouseover', function() {
-      days[i].style.zoom = '180%'
+      days[i].style.zoom = '150%'
     })
   }
 
@@ -117,6 +118,7 @@ function zoomIn() {
 zoomIn()
 
 // function zoomOut() {
+function zoomOut() {
   let days = document.querySelectorAll('.day')
 
   for(let i = 0; i < days.length; i++) {
@@ -124,5 +126,114 @@ zoomIn()
       days[i].style.zoom = '100%'
     })
   }
-
+}
+  
 zoomOut()
+
+// 7
+function createTask(task) {
+  let taskSpan = document.createElement('span')
+  taskSpan.innerText = task
+  let myTasks = document.querySelector('.my-tasks')
+
+  myTasks.appendChild(taskSpan)
+
+}
+
+createTask('Cozinhar')
+
+// 8
+function colorLegend(color) {
+  createDiv = document.createElement('div')
+  createDiv.className = 'task'
+
+  createDiv.style.backgroundColor = color
+  
+  let myTasks = document.querySelector('.my-tasks')
+  myTasks.appendChild(createDiv)
+}
+
+colorLegend('red')
+
+// 9
+function divEvent() {
+  let divTask = document.querySelector('.task')
+
+  divTask.addEventListener('click', function() {
+    if (divTask.className === 'task') {
+      divTask.classList.add('selected')
+    } else {
+      divTask.classList.remove('selected')
+    }
+  })
+}
+
+divEvent()
+
+// 10
+function eventMonthDay() {
+  let monthDay = document.querySelectorAll('.day')
+  let divTask = document.querySelector('.task')
+
+  // console.log(selected)
+
+  for(let i = 0; i < monthDay.length; i++) {
+    monthDay[i].addEventListener('click', function() {
+      if(divTask.matches('.selected')) {
+        if(monthDay[i].style.backgroundColor === `${divTask.style.backgroundColor}`) {
+          monthDay[i].style.backgroundColor = '#eee'
+          monthDay[i].style.color = '#777'
+        } else {
+          monthDay[i].style.backgroundColor = `${divTask.style.backgroundColor}`
+        }
+      } else {
+        monthDay[i].style.backgroundColor = '#eee'
+      }
+    })
+  }
+}
+
+eventMonthDay()
+
+// bonus
+function appointment() {
+  let buttonAdd = document.querySelector('#btn-add')
+  let inputCont = document.querySelector('.task-list')
+
+  let caixaTexto = document.getElementById('task-input')
+
+  
+  buttonAdd.addEventListener('click', function() {
+    let li = document.createElement('li')
+  
+    let value = caixaTexto.value
+    if (value === '') {
+      alert('Digite uma tarefa')
+    } else {
+      li.innerHTML = value
+    }
+    
+    inputCont.appendChild(li)
+    caixaTexto.value = ''
+  })
+
+
+  caixaTexto.addEventListener('keypress', function(e) {
+    if (e.which == 13) {
+      let li = document.createElement('li')
+  
+      let value = caixaTexto.value
+      if (value === '') {
+        alert('Digite uma tarefa')
+      } else {
+        li.innerHTML = value
+      }
+      
+      inputCont.appendChild(li)
+      caixaTexto.value = ''
+    }
+  })
+
+}
+
+appointment()
