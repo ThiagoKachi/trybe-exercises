@@ -8,7 +8,55 @@
     <title>Currículo</title>
 </head>
 <body>
-    
+    <form method="GET">
+        <fieldset>
+
+            <legend>Currículo</legend>
+            <label for="name">Nome</label>
+            <input class="line-content" type="text" name="name" id="name" maxlength="40" required>
+
+            <label for="email">E-mail</label>
+            <input class="line-content" type="email" name="email" id="email" maxlength="50" required>
+
+            <label for="cpf">CPF</label>
+            <input class="line-content" type="number" name="cpf" id="cpf" maxlength="11" required>
+
+            <label for="endereco">Endereço</label>
+            <input class="line-content" type="text" name="endereco" id="endereco" maxlength="200" required>
+
+            <div class="state-type">
+                <div class="state">
+                    <label for="estado">Estado:</label>
+                    <select name="estado" id="estado"></select>
+                </div>
+                
+                <div class="type">
+                    <label for="tipo">Tipo:</label>
+                    <input value="casa" type="radio" name="tipo" id="tipo" required> Casa
+                    <input value="ap" type="radio" name="tipo" id="tipo" required> Apartamento
+                </div>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Sobre sua carreira</legend>
+            <label for="resumo">Resumo de seu currículo</label>
+            <textarea class="line-content" name="resumo" id="resumo" cols="30" rows="10" required maxlength="1000"></textarea>
+
+            <label for="cargo">Cargo</label>
+            <input class="line-content" type="text" name="cargo" id="cargo" maxlength="40" required>
+            
+            <label for="inicio">Data de início</label>
+            <input type="date" name="data-inicio" id="inicio" required>
+        </fieldset>
+
+        <div class="buttons">
+            <button id="enviar" type="submit">Enviar</button>
+            <button type="reset">Resetar</button>
+        </div>
+    </form>
+
     <script src="script.js"></script>
 </body>
 </html>
