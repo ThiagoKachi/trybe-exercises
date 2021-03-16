@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Currículo</title>
+</head>
+<body>
+    <form method="GET">
+        <fieldset>
+
+            <legend class="fs-1">Currículo</legend>
+            <div class="mb-3">
+                <label class="form-label" for="name">Nome</label>
+                <input class="form-control" type="text" name="name" id="name" maxlength="40" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="email">E-mail</label>
+                <input class="form-control" type="email" name="email" id="email" maxlength="50" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="cpf">CPF</label>
+                <input class="form-control" type="number" name="cpf" id="cpf" maxlength="11" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="endereco">Endereço</label>
+                <input class="form-control" type="text" name="endereco" id="endereco" maxlength="200" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="estado">Estado:</label>
+                <select class="form-select" name="estado" id="estado"></select>
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-check-label" for="tipo">Tipo:</label>
+                <input class="form-check-input" value="casa" type="radio" name="tipo" id="tipo" required> Casa
+                <input class="form-check-input" value="ap" type="radio" name="tipo" id="tipo" required> Apartamento
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend class="fs-2">Sobre sua carreira</legend>
+            <div class="mb-3">
+                <label class="form-label" for="resumo">Resumo de seu currículo</label>
+                <textarea class="form-control" name="resumo" id="resumo" cols="30" rows="10" required maxlength="1000"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="cargo">Cargo</label>
+                <input class="form-control" type="text" name="cargo" id="cargo" maxlength="40" required>
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label" for="inicio">Data de início</label>
+                <input class="form-input" type="date" id="inicio">
+            </div>
+
+        </fieldset>
+
+        <div class="mb-3" align="center">
+            <button class="btn btn-success" id="enviar" type="submit">Enviar</button>
+            <button class="btn btn-outline-danger" type="reset">Resetar</button>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
