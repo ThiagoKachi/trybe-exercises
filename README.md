@@ -1,4 +1,4 @@
-<p style="text-align: center;"> 
+<p align="center"> 
     <img width="200px" src="https://pbs.twimg.com/profile_images/1335930580010225667/cFKy_fC3_400x400.jpg" alt="Logo Trybe">
 </p>
 
