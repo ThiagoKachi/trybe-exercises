@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(252, 252, 252);
+  font-family: 'Montserrat', sans-serif;
+  padding: 2% 25%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.pokemon-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  width: 320px;
+  padding: 5px 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  background: whitesmoke;
+
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pokemon-list:hover {
+  transform: translateY(-5px);
+  transition: transform 200ms;
+}
+
+.poke-infos h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.poke-infos p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.poke-image img {
+  cursor: pointer;
+  width: 100px;
+}
